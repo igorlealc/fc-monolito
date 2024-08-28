@@ -1,6 +1,6 @@
 import Invoice from "../domain/invoice.entity";
 
 export default interface InvoiceGateway {
-    create(client: Invoice): Promise<void>;
+    create(invoice: Invoice): Promise<void>;
     find(id: string): Promise<Invoice>;
   }
